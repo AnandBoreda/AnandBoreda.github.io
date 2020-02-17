@@ -17,6 +17,7 @@ function Rskills(reload)
   {
     alert('Thanks for your interest, ' + name +'! \n we will get back to you at '+mail)
     document.getElementById('contact').innerHTML=' Thank you for contacting us, '+name+'!'+' <br/>  we will reach you at  '+mail;
+    document.getElementById('contact').style='text-align:center;padding:50px 0px;font-weight:bolder;'
   }
 
  }

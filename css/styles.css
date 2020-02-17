@@ -182,3 +182,6 @@ button{
 button:hover{
     cursor: pointer;
 }
+::placeholder {
+    color:green;
+}
