@@ -46,16 +46,17 @@ body{
     margin-top: 25px;
     align-self: center;
     text-shadow: 1px 1px 5px #000000;
-
+    font-family: 'Poppins', sans-serif;
 }
 h5{
     align-self: center;
     text-shadow: 2px 1px 3px grey;
 }
 .card-footer{
-align-self: center;
-margin: 200px 0px 50px 0px;
-box-shadow: 0px 0px 10px #000;
+    /* min-width: 348px; */
+    align-self: center;
+    margin: 200px 0px 50px 0px;
+    box-shadow: 0px 0px 10px #000;
 }
 .navbar > a > h3{
     box-shadow: 0px 0px 8px #000;
@@ -95,11 +96,11 @@ td>a, td{
 /* skills */
 .progress-bar {
     width: 0;
-    animation: progress 1.5s ease-in-out forwards;
+    animation: progress 1.5s ease-in-out 1s forwards;
 } 
   .title {
       opacity: 0;
-      animation: show 0.35s forwards ease-in-out 0.5s;
+      animation: show 1s forwards ease-in-out 1.5s;
     }
   @keyframes progress {
     from {
