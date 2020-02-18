@@ -78,10 +78,6 @@ td>a, td{
     border-radius: 25px;
     background-color: rgb(45, 45, 90);
     box-shadow: 0px 0px 20px #000;
-
-    /* background: linear-gradient(124deg,  #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 300% 300%;
-    animation: rainbow 18s ease infinite; */
  }
  #num1{
      margin-bottom: 50px;
@@ -180,8 +176,15 @@ button{
     text-decoration: none;
 }
 button:hover{
+    color: green;
     cursor: pointer;
 }
 ::placeholder {
-    color:green;
+    color:rgb(45, 45, 90);
+}
+.modal-content{
+    text-align: center;
+    border-radius: 15px;
+    color:rgb(45, 45, 90);
+    background-color: white;
 }
