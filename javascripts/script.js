@@ -1,7 +1,7 @@
 function Rskills(reload)
    {
     window.location.hash = '#skills';
-    if(window.location == #skills){window.location.reload(true);}
+    if(window.location == '#skills'){window.location.reload(true);}
  }
  function Racad(reload)
    {
