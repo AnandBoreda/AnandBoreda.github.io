@@ -6,7 +6,7 @@ function Rskills(reload)
  function Racad(reload)
    {
     window.location.hash = '#academics';
-    window.location.reload(true);
+    if(window.location == '#academics'){window.location.reload(true);}
  }
  function formsubgreet()
  {
