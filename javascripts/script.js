@@ -1,13 +1,3 @@
-function Rskills(reload)
-   {
-    window.location.hash = '#skills';
-    if(window.location == '#skills'){window.location.reload(true);}
- }
- function Racad(reload)
-   {
-    window.location.hash = '#academics';
-    if(window.location == '#academics'){window.location.reload(true);}
- }
  function formsubgreet()
  {
    let name = document.forms["cont-form"]["name"].value;
@@ -22,3 +12,7 @@ function Rskills(reload)
     document.getElementById('contact').style='text-align:center;padding:50px 0px;font-weight:bolder;'
   }
  }
+function menutoggle(){
+  var menu = document.getElementById('Navbar');
+  menu.classList.remove('show');
+}
