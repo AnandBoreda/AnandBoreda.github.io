@@ -18,10 +18,10 @@ function menutoggle(){
 }
 
 
-function age() {
-  var d = new Date();
-  var y = d.getFullYear();
-  var age = y - 1998;
-  document.getElementById("anand-age").innerHTML = age;
-}
-age();
+// function age() {
+//   var d = new Date();
+//   var y = d.getFullYear();
+//   var age = y - 1998;
+//   document.getElementById("anand-age").innerHTML = age;
+// }
+// age();
