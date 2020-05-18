@@ -16,3 +16,12 @@ function menutoggle(){
   var menu = document.getElementById('Navbar');
   menu.classList.remove('show');
 }
+
+
+function age() {
+  var d = new Date();
+  var y = d.getFullYear();
+  var age = y - 1998;
+  document.getElementById("anand-age").innerHTML = age;
+}
+age();
