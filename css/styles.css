@@ -1,190 +1,201 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background: cyan;
-    position: relative;
+body {
+  background: cyan;
+  position: relative;
 }
-#Navbar a:hover{
-    color: #FFF;
+#Navbar a:hover {
+  color: #fff;
 }
 #myVideo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-.card{
-    top: 400px;
-    height: auto;
-    /* opacity: .9; */
-    margin-bottom: 50px;
-    box-shadow: 0px 0px 40px rgb(59, 56, 56);
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-left: auto;
-    margin-right: auto;
+.card {
+  top: 400px;
+  height: auto;
+  /* opacity: 0.9; */
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 40px rgb(59, 56, 56);
+  background-color: rgba(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
 }
-#num1>p,#num2>p,#num3>p{
-    font-family: Arial, Helvetica, sans-serif;
-} 
-.media > img{
-    border-radius: 50%;
-    margin: -120px auto 10px auto;
-    align-self: center;
-    height: 240px;
-    opacity: 1;
-    width: 200px;
-    box-shadow: 4px 4px 40px #000;
+#num1 > p,
+#num2 > p,
+#num3 > p {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#dp:hover{ 
-    transition: transform .6s;
-    transform: scale(1.2);
+.media > img {
+  border-radius: 50%;
+  margin: -120px auto 10px auto;
+  align-self: center;
+  height: 240px;
+  opacity: 1;
+  width: 240px;
+  box-shadow: 4px 4px 40px #000;
 }
-.card > h1{
-    margin-top: 25px;
-    align-self: center;
-    text-shadow: 1px 1px 5px #000000;
-    font-family: 'Poppins', sans-serif;
+#dp:hover {
+  transition: transform 0.6s;
+  transform: scale(1.2);
 }
-h5{
-    align-self: center;
-    text-shadow: 2px 1px 3px grey;
+.card > h1 {
+  margin-top: 25px;
+  align-self: center;
+  text-shadow: 1px 1px 5px #000000;
+  font-family: "Poppins", sans-serif;
 }
-.card-footer{
-    /* min-width: 348px; */
-    align-self: center;
-    margin: 200px 0px 50px 0px;
-    box-shadow: 0px 0px 10px #000;
+h5 {
+  align-self: center;
+  text-shadow: 2px 1px 3px grey;
 }
-.navbar > a > h3{
-    box-shadow: 0px 0px 8px #000;
+.card-footer {
+  /* min-width: 348px; */
+  align-self: center;
+  margin: 200px 0px 50px 0px;
+  box-shadow: 0px 0px 10px #000;
 }
-.table td, .table th {
-padding: .75rem;
-vertical-align: top;
-word-wrap: break-word;
-border-top: 0px solid #dee2e6;
+.navbar > a > h3 {
+  box-shadow: 0px 0px 8px #000;
 }
-td>a, td{
-    color: #FFF;
-    text-decoration: none;
-    overflow: auto;
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  word-wrap: break-word;
+  border-top: 0px solid #dee2e6;
 }
-.media-body{
-    border: .1px solid;
-    margin-top: 50px;
-    border-radius: 25px;
-    background-color: rgb(45, 45, 90);
-    box-shadow: 0px 0px 20px #000;
- }
- #num1{
-     margin-bottom: 50px;
- }
- #num1 > h3,#num2 > h3,p{
-     color: #FFF;
- }
-#num2{
-    margin-left:auto;
-    margin-right: auto;
+td > a,
+td {
+  color: #fff;
+  text-decoration: none;
+  overflow: auto;
+}
+.media-body {
+  border: 0.1px solid;
+  margin-top: 50px;
+  border-radius: 25px;
+  background-color: rgb(45, 45, 90);
+  box-shadow: 0px 0px 20px #000;
+}
+#num1 {
+  margin-bottom: 50px;
+}
+#num1 > h3,
+#num2 > h3,
+p {
+  color: #fff;
+}
+#num2 {
+  margin-left: auto;
+  margin-right: auto;
 }
 /* skills */
 .progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out 1s forwards;
+}
+.title {
+  opacity: 0;
+  animation: show 1s forwards ease-in-out 1.5s;
+}
+@keyframes progress {
+  from {
     width: 0;
-    animation: progress 1.5s ease-in-out 1s forwards;
-} 
-  .title {
-      opacity: 0;
-      animation: show 1s forwards ease-in-out 1.5s;
-    }
-  @keyframes progress {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  } 
-  @keyframes show  {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
- /*--------- forms --------- */
-
- form{
-    width: fit-content;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-   
-}
- 
-input[type=text], input[type=email], input[type=password], textarea{
-    width: auto ;
-    padding: 15px 30px;
-    border: none;
-    border-bottom: 1px solid rgb(105, 231, 221);
-    transition: all .5s;
-    font-size: 16px;
-    background-color: rgb(147, 221, 129);
-    border-radius: 6px;
-}
- 
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus,textarea:focus{
-    box-shadow: 0px 0px 15px white;
-    background-color: white;
-}
-
-form input{
-    margin-top: 10px;
-}
-form p{
-    font-family: sans-serif;
-    font-size: 16px;
-}
-form select{
-    width: 95%;
-    padding: 15px 30px;
-    margin-top: 20px;
-    border: 1.2px solid rgb(224, 224, 224);
-    transition: all .6s;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: sans-serif;
-}
-form select:focus{
-    outline: none;
-    border: 1.3px solid ;
-}
-select option{
-    padding: 15px;
-}
-button{
-    border-radius: 6px;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-family: sans-serif;
-    margin: auto;
-    display: block;
+  to {
     width: 100%;
-    transition: all .2s;
-    text-decoration: none;
+  }
 }
-button:hover{
-    color: green;
-    cursor: pointer;
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*--------- forms --------- */
+
+form {
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: auto;
+  padding: 15px 30px;
+  border: none;
+  border-bottom: 1px solid rgb(105, 231, 221);
+  transition: all 0.5s;
+  font-size: 16px;
+  background-color: rgb(147, 221, 129);
+  border-radius: 6px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  box-shadow: 0px 0px 15px white;
+  background-color: white;
+}
+
+form input {
+  margin-top: 10px;
+}
+form p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+form select {
+  width: 95%;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: 1.2px solid rgb(224, 224, 224);
+  transition: all 0.6s;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+form select:focus {
+  outline: none;
+  border: 1.3px solid;
+}
+select option {
+  padding: 15px;
+}
+button {
+  border-radius: 6px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: auto;
+  display: block;
+  width: 100%;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+button:hover {
+  color: green;
+  cursor: pointer;
 }
 ::placeholder {
-    color:rgb(45, 45, 90);
+  color: rgb(45, 45, 90);
 }
-.modal-content{
-    text-align: center;
-    border-radius: 15px;
-    color:rgb(45, 45, 90);
-    background-color: white;
+.modal-content {
+  text-align: center;
+  border-radius: 15px;
+  color: rgb(45, 45, 90);
+  background-color: white;
 }
