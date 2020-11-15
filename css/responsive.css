@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+  .cert-img > img {
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+    box-shadow: 0px 0px 2rem black;
+  }
+}

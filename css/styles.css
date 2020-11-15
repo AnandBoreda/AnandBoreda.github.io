@@ -9,14 +9,14 @@ body {
   width: 0.8rem;
 }
 ::-webkit-scrollbar-track {
-  background: #124380;
+  background: #2d2d5a;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 60px;
-  background: #e03a3d;
+  background: #dc3545;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #648829;
+  background: #28a745;
 }
 #Navbar a:hover {
   color: #fff;
@@ -31,10 +31,12 @@ body {
   min-height: 100%;
 }
 .card {
-  top: 400px;
+  /* top: 400px; */
+  top: 50vh;
   height: auto;
   /* opacity: 0.9; */
   margin-bottom: 50px;
+  border-radius: 1rem;
   box-shadow: 0px 0px 40px rgb(59, 56, 56);
   background-color: rgba(255, 255, 255);
   margin-left: auto;
@@ -61,7 +63,7 @@ body {
 .card > h1 {
   margin-top: 25px;
   align-self: center;
-  text-shadow: 1px 1px 5px #000000;
+  text-shadow: 1px 3px 5px #505050;
   font-family: "Poppins", sans-serif;
 }
 h5 {
@@ -71,7 +73,7 @@ h5 {
 .card-footer {
   /* min-width: 348px; */
   align-self: center;
-  margin: 200px 0px 50px 0px;
+  margin: 3rem 0px 2rem 0px;
   box-shadow: 0px 0px 10px #000;
 }
 .navbar > a > h3 {
@@ -144,6 +146,49 @@ p {
     opacity: 1;
   }
 }
+/* --- certifications --- */
+/* .cert-img {
+  text-align: center;
+} */
+.carousel-item {
+  text-align: center;
+}
+/* .cert-img > img {
+  margin: 1.5rem 0 1.5rem 0;
+  width: 80%;
+  box-shadow: 0px 0px 2rem black;
+} */
+.carousel-item > img {
+  margin: 1.5rem 0 1.5rem 0;
+  width: 80%;
+  box-shadow: 0px 0px 2rem black;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 2rem;
+  width: 2rem;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 60px;
+  border: 2px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 1rem;
+  font-weight: 800;
+  color: #2d2d5a;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 1rem;
+  font-weight: 800;
+  color: #2d2d5a;
+}
+/* ----- testimonials ----- */
+
 /*--------- forms --------- */
 
 form {
