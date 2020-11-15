@@ -16,7 +16,7 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/javascripts/script.js"></script>
+
   <!-- my css -->
   <link rel="stylesheet" href="/css/styles.css">
   <!-- <script src="/bootstrap/js/bootstrap.js"> </script> -->
@@ -36,13 +36,13 @@
           </button></span>
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-auto"><a href="#about" onclick="menutoggle();" class="nav-link">About Me</a></li>
-            <li class="nav-item mx-auto"><a href="#skills" onclick="menutoggle();" class="nav-link">Skills</a></li>
-            <li class="nav-item mx-auto"><a href="#experience" onclick="menutoggle();" class="nav-link">Experience</a>
+            <li class="nav-item mx-auto"><a href="#about" onclick="menutoggle()" class="nav-link">About Me</a></li>
+            <li class="nav-item mx-auto"><a href="#skills" onclick="menutoggle()" class="nav-link">Skills</a></li>
+            <li class="nav-item mx-auto"><a href="#experience" onclick="menutoggle()" class="nav-link">Experience</a>
             </li>
-            <li class="nav-item mx-auto"><a href="#academics" onclick="menutoggle();" class="nav-link">Academics</a>
+            <li class="nav-item mx-auto"><a href="#academics" onclick="menutoggle()" class="nav-link">Academics</a>
             </li>
-            <li class="nav-item mx-auto"><a href="#contact" onclick="menutoggle();" class="nav-link">Contact</a></li>
+            <li class="nav-item mx-auto"><a href="#contact" onclick="menutoggle()" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -63,32 +63,36 @@
             <h5 class="text-muted ml-2"> Full Stack Web Developer</h5>
             <div class="media-body">
               <div class="container table">
-                <table class="table table-responsive mx-4" style="width:device-width;overflow-x:auto;" border="0">
-                  <tr>
-                    <td>Age</td>
-                    <td>:</td>
-                    <td>22</td>
-                  </tr>
-                  <tr>
-                    <td>Email</td>
-                    <td>:</td>
-                    <td><a href="mailto:anand.boreda@pm.me?Subject=portfolio" target="_top">anand.boreda@pm.me</a></td>
-                  </tr>
-                  <tr>
-                    <td>Phone</td>
-                    <td>:</td>
-                    <td><a href="tel:837-456-3449">+91 837 456 3449</a></td>
-                  </tr>
-                  <tr>
-                    <td>Website</td>
-                    <td>:</td>
-                    <td><a href="https://anandboreda.github.io/">anandboreda.github.io</a></td>
-                  </tr>
-                  <tr>
-                    <td>Address</td>
-                    <td>:</td>
-                    <td>Hyderabad, Telangana</td>
-                  </tr>
+                <table class="table table-responsive mx-4" style="width:device-width;overflow-x:auto;border:0">
+                  <tbody class="tbody">
+                    <tr>
+                      <td>Age</td>
+                      <td>:</td>
+                      <td id="anand_age"> </td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>:</td>
+                      <td><a href="mailto:anand.boreda@pm.me?Subject=portfolio" target="_top">anand.boreda@pm.me</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Phone</td>
+                      <td>:</td>
+                      <td><a href="tel:837-456-3449">+91 837 456 3449</a></td>
+                    </tr>
+                    <tr>
+                      <td>Website</td>
+                      <td>:</td>
+                      <td><a href="https://anandboreda.github.io/">anandboreda.github.io</a></td>
+                    </tr>
+                    <tr>
+                      <td>Address</td>
+                      <td>:</td>
+                      <td>Hyderabad, Telangana</td>
+                    </tr>
+                  </tbody>
+
                 </table>
               </div>
             </div>
@@ -311,7 +315,7 @@
           <div class="media-body">
             <div class="container" id="num4">
               <div class="form">
-                <form action="#" name="cont-form" onsubmit="return formsubgreet();" method="GET">
+                <form action="#" name="cont-form" onsubmit="formsubgreet()" method="GET">
                   <p>
                     <input type="text" name="name" id="name" placeholder="Name" required>
                   </p>
@@ -325,8 +329,8 @@
                     <textarea name="message" id="" cols="23" rows="10" placeholder="Message"></textarea>
                   </p>
 
-                  <button type="submit" class="btn btn-danger" data-toggle="modal"
-                    data-target="#myModal">Submit</button>
+                  <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+                    onclick="verify()">Submit</button>
 
                 </form>
               </div>
@@ -353,7 +357,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
 
-          <div class="modal-body">
+          <div class="modal-body" id="mbody">
             Thanks for contacting us, <div id="modal-name" style="display: inline-block;"></div>
             <br>
             we will reach you at <div id="modal-mail" style="display: inline-block;"></div>
@@ -365,6 +369,7 @@
       </div>
     </div>
   </div>
+  <script src="/javascripts/script.js"></script>
 </body>
 
 </html>

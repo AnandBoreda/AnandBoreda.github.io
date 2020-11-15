@@ -5,9 +5,23 @@ body {
   background: cyan;
   position: relative;
 }
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  background: #124380;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 60px;
+  background: #e03a3d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #648829;
+}
 #Navbar a:hover {
   color: #fff;
 }
+
 #myVideo {
   position: fixed;
   top: 0;
@@ -70,11 +84,21 @@ h5 {
   word-wrap: break-word;
   border-top: 0px solid #dee2e6;
 }
+td,
 td > a,
-td {
-  color: #fff;
+td > a:hover {
   text-decoration: none;
-  overflow: auto;
+  color: white;
+}
+.table-responsive {
+  overflow-x: auto;
+  border: 0;
+  height: 15rem;
+}
+.tbody {
+  position: absolute;
+  margin: 0 auto 0 50%;
+  transform: translateX(-61%);
 }
 .media-body {
   border: 0.1px solid;
