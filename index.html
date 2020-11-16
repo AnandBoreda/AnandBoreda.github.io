@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
   <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> -->
+  <!-- smtp -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -17,12 +19,11 @@
     crossorigin="anonymous"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-
   <!-- my css -->
   <link rel="stylesheet" href="/css/styles.css?rnd=132">
   <link rel="stylesheet" href="/css/responsive.css?rnd=132">
   <!-- <script src="/bootstrap/js/bootstrap.js"> </script> -->
-  <title>Anand Boreda-Portfolio</title>
+  <title>Anand Boreda - Portfolio</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -69,7 +70,7 @@
               <img src="/images/dp3.jpg" alt="Anand Boreda" id="dp">
             </div>
             <h1>Anand Boreda</h1>
-            <h5 class="text-muted ml-2"> Javascript Developer</h5>
+            <h5 class="text-dark ml-2"> Javascript Developer</h5>
             <div class="media-body">
               <div class="container table">
                 <table class="table table-responsive mx-4" style="width:device-width;overflow-x:auto;border:0">
@@ -423,24 +424,26 @@
           <h1>Contact</h1>
           <div class="media-body">
             <div class="container" id="num4">
-              <div class="form">
-                <form action="#" name="cont-form" onsubmit="formsubgreet();" method="POST">
-                  <p>
+              <div class="form d-flex flex-column ">
+                <form name="cont-form" action="https://formspree.io/f/mgepzlop" method="POST">
+                  <label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
-                  </p>
-                  <p>
+                  </label>
+                  <br>
+                  <label>
                     <input type="email" name="email" id="email" placeholder="E-mail" required>
-                  </p>
-                  <p>
-                    <input type="text" name="subject" id="email_sub" placeholder="E-mail Subject" required>
-                  </p>
-                  <p>
+                  </label>
+                  <br>
+                  <label>
+                    <input type="text" name="subject" id="subject" placeholder="E-mail Subject" required>
+                  </label>
+                  <br>
+                  <label>
                     <textarea name="message" id="message" cols="23" rows="10" placeholder="Message" required></textarea>
-                  </p>
-
+                  </label>
+                  <br>
                   <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#myModal"
-                    onclick="verify()">Submit</button>
-
+                    onclick="setTimeout(verify, 500); setTimeout(halt, 1500)">Submit</button>
                 </form>
               </div>
             </div>

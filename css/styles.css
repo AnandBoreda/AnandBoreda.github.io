@@ -65,9 +65,9 @@ body {
   text-shadow: 1px 3px 5px #505050;
   font-family: "Poppins", sans-serif;
 }
-h5 {
+#about > h5 {
   align-self: center;
-  text-shadow: 2px 1px 3px grey;
+  text-shadow: 0px 2px 3px grey;
 }
 .card-footer {
   /* min-width: 348px; */
@@ -222,7 +222,7 @@ textarea:focus {
 form input {
   margin-top: 10px;
 }
-form p {
+form label {
   font-family: sans-serif;
   font-size: 16px;
 }
