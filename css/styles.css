@@ -51,9 +51,8 @@ body {
   border-radius: 50%;
   margin: -120px auto 10px auto;
   align-self: center;
-  height: 240px;
   opacity: 1;
-  width: 240px;
+  width: 12rem;
   box-shadow: 4px 4px 40px #000;
 }
 #dp:hover {

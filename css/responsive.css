@@ -4,4 +4,7 @@
     width: 100%;
     box-shadow: 0px 0px 2rem black;
   }
+  .card {
+    top: 35vh !important;
+  }
 }
