@@ -21,6 +21,11 @@ body {
 #Navbar a:hover {
   color: #fff;
 }
+.brand-title {
+  text-align: center;
+  margin-top: 66vh;
+  color: white;
+}
 
 #myVideo {
   position: fixed;
