@@ -186,6 +186,15 @@ p {
   font-weight: 800;
   color: #2d2d5a;
 }
+.carousel-indicators li {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 60%;
+  background-color: #2d2d5a;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
 /* ----- testimonials ----- */
 
 /*--------- forms --------- */
