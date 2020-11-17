@@ -168,7 +168,7 @@
   }
 }
 #preload {
-  animation: prelaoderanim 3s forwards !important;
+  animation: prelaoderanim 4.5s forwards !important;
 }
 
 @keyframes overflow {
