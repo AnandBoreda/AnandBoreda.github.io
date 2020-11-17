@@ -103,7 +103,7 @@ td > a:hover {
 }
 .media-body {
   border: 0.1px solid;
-  margin-top: 50px;
+  margin-top: 1rem;
   border-radius: 25px;
   background-color: rgb(45, 45, 90);
   box-shadow: 0px 0px 20px #000;
