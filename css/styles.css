@@ -24,6 +24,7 @@ body {
 ::selection {
   background: #28a745;
   color: #ffffff;
+  border-radius:20px;
 }
 .brand-title {
   text-align: center;
