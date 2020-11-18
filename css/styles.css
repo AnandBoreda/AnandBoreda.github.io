@@ -21,6 +21,10 @@ body {
 #Navbar a:hover {
   color: #fff;
 }
+::selection {
+  background: #28a745;
+  color: #ffffff;
+}
 .brand-title {
   text-align: center;
   margin-top: 66vh;
