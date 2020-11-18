@@ -21,10 +21,14 @@ body {
 #Navbar a:hover {
   color: #fff;
 }
-::selection {
+::-moz-selection {
+  color: white;
   background: #28a745;
-  color: #ffffff;
-  border-radius:20px;
+}
+
+::selection {
+  color: white;
+  background: #28a745;
 }
 .brand-title {
   text-align: center;
