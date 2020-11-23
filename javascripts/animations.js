@@ -69,13 +69,18 @@ class TypeWriter {
 anime({
     targets: '.dp',
     opacity:[0,1],
-    translateX: [-500, 0],
+    translateY: [-500, 0],
     delay:4300
   });
 anime({
     targets:'.navbar',
     translateY:[-300, 0],
     delay: 4300
+})
+anime({
+    targets:'.name',
+    scale:[0, 1],
+    delay: 5000
 })
 
 // animate on scroll (AOS)

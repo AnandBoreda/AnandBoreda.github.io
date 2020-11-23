@@ -202,19 +202,19 @@ body {
 @keyframes brand-title-anim {
   0%,
   20% {
-    color: #ffffff;
+    color: #28a745;
   }
 
   40%,
   60% {
-    color: #dc3545;
+    color: #ffffff;
   }
 
   80%,
   100% {
-    color: #28a745;
+    color: #dc3545;
   }
 }
 .brand-title {
-  animation: brand-title-anim 3s ease forwards infinite;
+  animation: brand-title-anim 2.6s ease forwards infinite;
 }
