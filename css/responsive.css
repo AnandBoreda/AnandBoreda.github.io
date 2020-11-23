@@ -10,10 +10,10 @@
   .col {
     padding: 0 0.5rem;
   }
-  .carousel-item > img:hover {
+  .carousel-item img:hover {
     transform: scale(1.3);
   }
-  .carousel-item > img {
+  .carousel-item img {
     border-radius: 10px;
   }
 }

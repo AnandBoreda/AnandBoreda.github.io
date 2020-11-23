@@ -7,7 +7,7 @@
   else{
     document.getElementById('modal-name').innerHTML=name+'!';
     document.getElementById('modal-mail').innerHTML=mail;
-    document.getElementById('contact').innerHTML=' Thank you for contacting us, '+name+'!'+' <br/>  we will reach you at  '+mail;
+    document.getElementById('contact').innerHTML=' Thank you for contacting me, '+name+'!'+' <br/>  I will reach you at  '+mail;
     document.getElementById('contact').style='text-align:center;padding:50px 0px;font-weight:bolder;'
   }
  }

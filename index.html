@@ -21,30 +21,34 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Anime Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <!-- my css -->
   <link rel="stylesheet" href="/css/styles.css?rnd=132">
   <link rel="stylesheet" href="/css/responsive.css?rnd=132">
   <link rel="shortcut icon" href="./images/dp3.jpg" type="image/x-icon">
   <!-- <script src="/bootstrap/js/bootstrap.js"> </script> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Anand Boreda - Portfolio</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
   <!-- preloader -->
-  <div class="loader" id="preload">
+  <!-- <div class="loader" id="preload">
     <div class="dot"></div>
     <div class="dot"></div>
     <div class="dot"></div>
     <h2 class="brand-title">Anand Boreda <br> <span style="font-size: 1rem;">Loading...</span></h2>
-  </div>
+  </div> -->
   <!-- body content -->
   <div id="Header">
     <nav class="navbar navbar-expand-sm navbar-dark bg-success fixed-top">
       <div class="container">
 
         <span><a href="#" class="navbar-brand" rel="home">
-            <h3 onclick="menutoggle();">Portfolio</h3>
+            <h3 onclick="menutoggle();" class="portfolio">Portfolio</h3>
           </a></span>
         <span><button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
@@ -82,10 +86,11 @@
     <div id="About">
       <div class="card" id="about">
         <div class="media">
-          <img src="/images/dp3.jpg" alt="Anand Boreda" id="dp">
+          <img src="/images/dp3.jpg" alt="Anand Boreda" id="dp" class="dp">
         </div>
-        <h1>Anand Boreda</h1>
-        <h5 class="text-dark ml-2"> Javascript Developer</h5>
+        <h1 class="name">Anand Boreda</h1>
+        <h5 class="text-dark ml-2"><span class="txt-type" data-wait="3000"
+            data-words='["JavaScript Developer", "Front-End Developer", "React Developer" , "Freelancer"]'></span></h5>
         <div class="media-body">
           <div class="container table">
             <table class="table table-responsive mx-4" style="width:device-width;overflow-x:auto;border:0">
@@ -121,7 +126,7 @@
             </table>
           </div>
         </div>
-        <div class="card-footer bg-white">
+        <div class="card-footer bg-white" data-aos="zoom-out-down">
           <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="linked in"><i
               class="fa fa-linkedin fa-2x mx-2"></i></a>
           <a href="https://github.com/AnandBoreda" target="_blank" title="Github"><i
@@ -136,9 +141,9 @@
       </div>
     </div>
     <!-- skills -->
-    <div class="card" id="skills">
-      <h1>Skills</h1>
-      <div class="media-body">
+    <div class="card" id="skills" data-aos="flip-left">
+      <h1 data-aos="fade-right">Skills</h1>
+      <div class="media-body" data-aos="flip-right">
         <div class="container d-flex flex-column" id="num1">
           <h3 class="ml-3 my-3"> Java Script</h3>
           <div class="progress mx-3">
@@ -147,8 +152,8 @@
           </div>
           <h3 class="ml-3 my-3"> ReactJS</h3>
           <div class="progress mx-3">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-              aria-valuemax="100" style="max-width: 90%;"><span class="title">90%</span></div>
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100" style="max-width: 80%;"><span class="title">80%</span></div>
           </div>
           <h3 class="ml-3 my-3"> Redux </h3>
           <div class="progress mx-3">
@@ -162,8 +167,8 @@
           </div>
           <h3 class="ml-3 my-3">CSS 3</h3>
           <div class="progress mx-3">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-              aria-valuemax="100" style="max-width: 95%;"><span class="title">95%</span></div>
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="98" aria-valuemin="0"
+              aria-valuemax="100" style="max-width: 98%;"><span class="title">98%</span></div>
           </div>
           <h3 class="ml-3 my-3">SASS</h3>
           <div class="progress mx-3">
@@ -172,8 +177,8 @@
           </div>
           <h3 class="ml-3 my-3">Bootstrap</h3>
           <div class="progress mx-3">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100" style="max-width: 80%;"><span class="title">80%</span></div>
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100" style="max-width: 90%;"><span class="title">90%</span></div>
           </div>
           <h3 class="ml-3 my-3">Python</h3>
           <div class="progress mx-3">
@@ -187,8 +192,8 @@
           </div>
           <h3 class="ml-3 my-3">Git</h3>
           <div class="progress mx-3">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-              aria-valuemax="100" style="max-width: 80%;"><span class="title">85%</span></div>
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100" style="max-width: 85%;"><span class="title">85%</span></div>
           </div>
           <h3 class="ml-3 my-3">MySQL</h3>
           <div class="progress mx-3">
@@ -202,7 +207,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer bg-white">
+      <div class="card-footer bg-white" data-aos="zoom-out-down">
         <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="linked in"><i
             class="fa fa-linkedin fa-2x mx-2"></i></a>
         <a href="https://github.com/AnandBoreda" target="_blank" title="Github"><i
@@ -218,9 +223,9 @@
 
     <!-- experience -->
 
-    <div class="card" id="experience">
-      <h1>Experience</h1>
-      <div class="media-body">
+    <div class="card" id="experience" data-aos="flip-right">
+      <h1 data-aos="fade-left">Experience</h1>
+      <div class="media-body" data-aos="flip-left">
         <div class="container" id="num2">
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
@@ -256,7 +261,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer bg-white">
+      <div class="card-footer bg-white" data-aos="zoom-out-down">
         <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="linked in"><i
             class="fa fa-linkedin fa-2x mx-2"></i></a>
         <a href="https://github.com/AnandBoreda" target="_blank" title="Github"><i
@@ -272,9 +277,9 @@
 
     <!-- Academics -->
 
-    <div class="card" id="academics">
-      <h1>Academics</h1>
-      <div class="media-body">
+    <div class="card" id="academics" data-aos="flip-left">
+      <h1 data-aos="flip-left">Academics</h1>
+      <div class="media-body" data-aos="flip-right">
         <div class="container" id="num3">
           <div class="col-lg-12">
             <div style="margin-bottom: 20px;">
@@ -289,7 +294,7 @@
           </div>
         </div>
       </div>
-      <div class="media-body">
+      <div class="media-body" data-aos="flip-right">
         <div class="container" id="num3">
           <div class="col-lg-12">
             <div style="margin-bottom: 20px;">
@@ -304,7 +309,7 @@
           </div>
         </div>
       </div>
-      <div class="media-body">
+      <div class="media-body" data-aos="flip-right">
         <div class="container" id="num3">
           <div class="col-lg-12">
             <div style="margin-bottom: 20px;">
@@ -319,7 +324,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer bg-white">
+      <div class="card-footer bg-white" data-aos="zoom-out-down">
         <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="linked in"><i
             class="fa fa-linkedin fa-2x mx-2"></i></a>
         <a href="https://github.com/AnandBoreda" target="_blank" title="Github"><i
@@ -335,9 +340,9 @@
 
 
     <!-- Certifications -->
-    <div class="card" id="certifications">
-      <h1>Certifications</h1>
-      <div id="certification" class="carousel slide" data-ride="carousel">
+    <div class="card" id="certifications" data-aos="flip-right">
+      <h1 data-aos="flip-right">Certifications</h1>
+      <div id="certification" class="carousel slide" data-ride="carousel" data-aos="flip-left">
         <ol class="carousel-indicators">
           <li data-target="#certification" data-slide-to="0" class="active"></li>
           <li data-target="#certification" data-slide-to="1"></li>
@@ -379,9 +384,9 @@
 
 
     <!-- Testimonials -->
-    <div class="card" id="testimonials">
-      <h1>Testimonials</h1>
-      <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+    <div class="card" id="testimonials" data-aos="flip-left">
+      <h1 data-aos="flip-left">Testimonials</h1>
+      <div id="testimonial-slider" class="carousel slide" data-ride="carousel" data-aos="flip-right">
         <ol class="carousel-indicators">
           <li data-target="#testimonial-slider" data-slide-to="0" class="active"></li>
           <li data-target="#testimonial-slider" data-slide-to="1"></li>
@@ -392,7 +397,8 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img src="./images/testimonials/kubebea.png" alt="First slide">
+            <a href="./images/testimonials/kubebea.png" target="_blank">
+              <img src="./images/testimonials/kubebea.png" alt="First slide"></a>
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
@@ -436,9 +442,9 @@
 
     <!-- Contact -->
 
-    <div class="card" id="contact">
-      <h1>Contact</h1>
-      <div class="media-body">
+    <div class="card" id="contact" data-aos="flip-right">
+      <h1 data-aos="flip-right">Contact</h1>
+      <div class="media-body" data-aos="flip-left">
         <div class="container" id="num4">
           <div class="form d-flex flex-column ">
             <form name="cont-form" action="https://formspree.io/f/mgepzlop" method="POST">
@@ -464,7 +470,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer bg-white">
+      <div class="card-footer bg-white" data-aos="zoom-out-down">
         <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="linked in"><i
             class="fa fa-linkedin fa-2x mx-2"></i></a>
         <a href="https://github.com/AnandBoreda" target="_blank" title="Github"><i
@@ -496,7 +502,11 @@
       </div>
     </div>
   </div>
+  <script>
+    // AOS.init();
+  </script>
   <script src="/javascripts/script.js"></script>
+  <script src="./javascripts/animations.js"></script>
 </body>
 
 </html>
