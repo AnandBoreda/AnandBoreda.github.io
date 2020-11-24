@@ -66,23 +66,29 @@ class TypeWriter {
   }
 
 // animejs
-anime({
-    targets: '.dp',
-    opacity:[0,1],
-    translateY: [-500, 0],
-    delay:4300
-  });
+
 anime({
     targets:'.navbar',
     translateY:[-300, 0],
     delay: 4300
 })
 anime({
-    targets:'.name',
-    scale:[0, 1],
+    targets:'.portfolio',
+    translateY:[-300, 0],
     delay: 5000
 })
-
+anime({
+    targets: '.dp',
+    scale:[0,1],
+    delay:5500
+  })
+anime({
+    targets:'.name',
+    // translateY:[-300, 0],
+    opacity:[0,1],
+    duration:10000,
+    delay: 6000
+})
 // animate on scroll (AOS)
     // AOS.init();
 
