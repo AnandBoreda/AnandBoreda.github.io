@@ -86,7 +86,7 @@ anime({
     targets:'.name',
     // translateY:[-300, 0],
     opacity:[0,1],
-    duration:10000,
+    duration:2000,
     delay: 6000
 })
 // animate on scroll (AOS)
