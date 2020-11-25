@@ -69,6 +69,8 @@
   border-radius: 0 0 5px 5px;
   background-color: #28a745;
   animation-name: dot3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 @keyframes dot1 {
