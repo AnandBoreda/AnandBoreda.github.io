@@ -326,6 +326,11 @@ button:hover {
 }
 #dwn-resume:hover{
   background-color: #2d2d5a !important;
+  border-radius: 60px !important;
+  transition: 1s;
+}
+#dwn-resume:active{
+  background-color: #2d2d5a !important;
   box-shadow: 0px 0px 10rem #28a745;
   border-radius: 60px !important;
   transition: 1s;
