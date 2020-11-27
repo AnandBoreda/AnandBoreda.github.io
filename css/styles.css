@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -321,6 +323,15 @@ button:hover {
   border-radius: 15px;
   margin: 1rem 0 0 0 ;
   background-color: #28A745 !important;
+}
+#dwn-resume:hover{
+  background-color: #2d2d5a !important;
+  box-shadow: 0px 0px 10rem #28a745;
+  border-radius: 60px !important;
+  transition: 1s;
+}
+#dwn-resume:hover > a{
+  color: #28a745;
 }
 #dwn-resume a{
   color: #ffffff;
