@@ -4,7 +4,8 @@ class TypeWriter {
       this.words = words;
       this.txt = '';
       this.wordIndex = 0;
-      this.wait = parseInt(wait, 10);
+      // this.wait = parseInt(wait, 10);
+      this.wait = 1500;
       this.type();
       this.isDeleting = false;
     }
@@ -38,6 +39,7 @@ class TypeWriter {
       if(!this.isDeleting && this.txt === fullTxt) {
         // Make pause at end
         typeSpeed = this.wait;
+        console.log(this.wait)
         // Set delete to true
         this.isDeleting = true;
       } else if(this.isDeleting && this.txt === '') {
