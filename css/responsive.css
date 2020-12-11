@@ -16,6 +16,9 @@
   .carousel-item img {
     border-radius: 10px;
   }
+  body {
+    margin-bottom: 20rem;
+  }
 }
 
 /* prelaoder  */
@@ -219,4 +222,9 @@ body {
 }
 .brand-title {
   animation: brand-title-anim 2.6s ease forwards infinite;
+}
+@media (min-width: 992px) {
+  body {
+    margin-bottom: 32rem;
+  }
 }
