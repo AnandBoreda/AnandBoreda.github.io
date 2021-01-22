@@ -1,31 +1,46 @@
- function verify(){
+function verify() {
   let name = document.forms["cont-form"]["name"].value;
   let mail = document.forms["cont-form"]["email"].value;
-  if (name == "" || mail == ""){
-    document.getElementById("mbody").innerHTML="Please enter valid details";
-  } 
-  else{
-    document.getElementById('modal-name').innerHTML=name+'!';
-    document.getElementById('modal-mail').innerHTML=mail;
-    document.getElementById('contact').innerHTML=' Thank you for contacting me, '+name+'!'+' <br/>  I will reach you at  '+mail;
-    document.getElementById('contact').style='text-align:center;padding:50px 0px;font-weight:bolder;'
+  if (name == "" || mail == "") {
+    document.getElementById("mbody").innerHTML = "Please enter valid details";
+  } else {
+    document.getElementById("modal-name").innerHTML = name + "!";
+    document.getElementById("modal-mail").innerHTML = mail;
+    document.getElementById("contact").innerHTML =
+      " Thank you for contacting me, " +
+      name +
+      "!" +
+      " <br/>  I will reach you at  " +
+      mail;
+    document.getElementById("contact").style =
+      "text-align:center;padding:50px 0px;font-weight:bolder;";
   }
- }
-function menutoggle(){
-  var menu = document.getElementById('Navbar');
-  menu.classList.remove('show');
 }
-
+function menutoggle() {
+  var menu = document.getElementById("Navbar");
+  menu.classList.remove("show");
+}
 
 function age() {
-  var d = new Date();
-  var y = d.getFullYear();
-  var age = y - 1998;
-  document.getElementById("anand_age").innerHTML = age;
+  const d = new Date();
+  const y = d.getFullYear();
+  var age;
+
+  const month = d.getMonth();
+  if (month < 10) {
+    age = y - 1999;
+    console.log(age);
+    document.getElementById("anand_age").innerHTML = age;
+  } else if (month >= 10) {
+    age = y - 1998;
+    console.log(age);
+    document.getElementById("anand_age").innerHTML = age;
+  }
 }
+
 age();
 
-function halt(){
+function halt() {
   window.stop();
 }
 
