@@ -27,7 +27,10 @@ body {
   color: white;
   background: #28a745;
 }
-
+::placeholder {
+  color: rgb(45, 45, 90);
+  font-weight: bolder;
+}
 ::selection {
   color: white;
   background: #28a745;
@@ -91,6 +94,7 @@ body {
 }
 .card-footer {
   /* min-width: 348px; */
+  border-radius: 60px !important;
   align-self: center;
   margin: 3rem 0px 2rem 0px;
   box-shadow: 0px 0px 10px #000;
@@ -222,7 +226,7 @@ p {
 .carousel-item img {
   margin: 1.5rem 0 1.5rem 0;
   width: 80%;
-  box-shadow: 0px 0px 2rem black;
+  box-shadow: 0px 5px 20px grey;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -258,6 +262,47 @@ p {
   background-color: #000;
 }
 /* ----- testimonials ----- */
+.testimonials .item {
+  background: #fff;
+  padding: 1rem 8rem;
+  border-radius: 15px;
+}
+.testimonials .item .profile {
+  display: flex;
+  padding-left: 15px;
+}
+.testimonials .item .profile img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1rem;
+  box-shadow: none;
+}
+.testimonials .item .profile .information p {
+  font-size: 24px;
+  margin: 0px auto 0px;
+  color: #5a3733;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: none;
+}
+.testimonials .item p {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+.testimonials .item .icon {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonials .item i {
+  font-size: 32px;
+  color: #ffd832;
+}
+.testimonials .card-footer {
+  margin: 0rem;
+}
 
 /*--------- forms --------- */
 
@@ -279,8 +324,9 @@ textarea {
   transition: all 0.5s;
   font-size: 16px;
   background-color: rgb(147, 221, 129);
-  border-radius: 6px;
+  border-radius: 20px;
   outline: none;
+  text-align: center;
 }
 
 input[type="text"]:focus,
@@ -329,9 +375,6 @@ button {
 button:hover {
   color: green;
   cursor: pointer;
-}
-::placeholder {
-  color: rgb(45, 45, 90);
 }
 .modal-content {
   text-align: center;

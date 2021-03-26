@@ -1,6 +1,6 @@
 function verify() {
-  let name = document.forms["cont-form"]["name"].value;
-  let mail = document.forms["cont-form"]["email"].value;
+  const name = document.forms["cont-form"]["name"].value;
+  const mail = document.forms["cont-form"]["email"].value;
   if (name == "" || mail == "") {
     document.getElementById("mbody").innerHTML = "Please enter valid details";
   } else {
