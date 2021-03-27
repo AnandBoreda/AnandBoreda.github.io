@@ -46,30 +46,24 @@ function halt() {
 
 /* email - SMTP */
 
-/*
-function sendEmail() {
-  let name = document.forms["cont-form"]["name"].value;
-  let email = document.forms["cont-form"]["email"].value;
-  let subject = document.forms["cont-form"]["subject"].value;
-  let msg = document.forms["cont-form"]["message"].value;
-  
-  let username = 'zz.anand2016@gmail.com';
-  let password = 'emledupo';
+// function sendEmail() {
+//   let name = document.forms["cont-form"]["name"].value;
+//   let email = document.forms["cont-form"]["email"].value;
+//   let subject = document.forms["cont-form"]["subject"].value;
+//   let msg = document.forms["cont-form"]["message"].value;
 
-  console.log(name, email, subject, message);
-	Email.send({
-	Host: "smtp.gmail.com",
-	Username : username,
-	Password : password,
-	To : 'zz.anand2016@gmail.com',
-	From : email,
-	Subject : 'message from anandboreda.com',
-  Body : `You have a new message from your portfolio website \n 
-  <h1 style="text-align:center;">Name: ${name} </h1>, \n
-  <h3 style="text-align:center;"> subject: ${subject}</h3> \n
-  <p style="text-align:center;"> message: ${msg} </p>`,
-	}).then(
-		message => alert(message, name, email, subject, msg)
-	);
-}
-*/
+//   let username = "zz.anand2016@gmail.com";
+//   let password = "emledupo";
+
+//   console.log(name, email, subject, message);
+//   Email.send({
+//     SecureToken: "48da42ae-91cb-437f-978c-39f7dfa991c7",
+//     To: "zz.anand2016@gmail.com",
+//     From: email,
+//     Subject: "message from anandboreda.com",
+//     Body: `You have a new message from your portfolio website \n
+//   <h1 style="text-align:center;">Name: ${name} </h1>, \n
+//   <h3 style="text-align:center;"> subject: ${subject}</h3> \n
+//   <p style="text-align:center;"> message: ${msg} </p>`,
+//   }).then((message) => alert(message, name, email, subject, msg));
+// }

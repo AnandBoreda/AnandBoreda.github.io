@@ -190,6 +190,12 @@ p {
     opacity: 1;
   }
 }
+/* experience */
+
+#experience img {
+  width: 12rem;
+}
+
 /* projects */
 .project-title {
   font-size: 1.5rem;
