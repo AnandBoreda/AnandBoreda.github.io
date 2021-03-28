@@ -67,3 +67,28 @@ function halt() {
 //   <p style="text-align:center;"> message: ${msg} </p>`,
 //   }).then((message) => alert(message, name, email, subject, msg));
 // }
+
+/* downlaod resume  */
+function dwnResume() {
+  const name = document.forms["dwn-resume"]["name"].value;
+  const email = document.forms["dwn-resume"]["email"].value;
+  const designation = document.forms["dwn-resume"]["designation"].value;
+
+  console.log(name, email, designation);
+
+  if (name != "" && email != "") {
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.setAttribute("href", "./documents/Anand%20Boreda%20Resume.pdf");
+    a.setAttribute(
+      "download",
+      "https://anandboreda.com/documents/Anand%20Boreda%20Resume.pdf"
+    );
+    a.click();
+    setTimeout(() => {
+      window.stop();
+    }, 2000);
+  } else {
+    alert("all fields are mandatory");
+  }
+}

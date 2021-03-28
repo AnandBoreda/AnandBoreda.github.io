@@ -18,9 +18,6 @@
   <!-- animate on scroll  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- smtp js -->
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-
   <!-- custom css -->
   <link rel="stylesheet" href="/css/styles.css?rnd=132">
   <link rel="stylesheet" href="/css/responsive.css?rnd=132">
@@ -137,11 +134,16 @@
             </table>
           </div>
         </div>
-        <div class="card-footer bg-white" data-aos="zoom-in-down" id="dwn-resume">
-          <a href="./documents/Anand Boreda Resume.pdf" download title="download resume as PDF"><i
-              class="fa fa-download" aria-hidden="true">
-              <span>Download
-                Resume</span> </i></a>
+        <div class="row mt-4" id="dwn-resume" data-aos="zoom-in-down">
+          <div class="container text-center">
+            <a href="#" class="btn btn-1" data-toggle="modal" data-target="#queryForm">
+              <i class="fa fa-download"></i>
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+              </svg>
+              &nbsp; Download Resume
+            </a>
+          </div>
         </div>
         <div class="card-footer bg-white" data-aos="zoom-in-down">
           <a href="https://www.linkedin.com/in/anand-boreda/" target="_blank" title="Linkedin"><i
@@ -609,7 +611,7 @@
                       <i class="fa fa-star"></i>
                     </div>
                     <p> Mr. Kubebea</p>
-                    <span> CEO and founder of The Flip Experts, Kenya</span>
+                    <span> CEO and Founder of The Flip Experts, Kenya</span>
                   </div>
                 </div>
                 <p>A very efficient Freelancer - works fast and delivers exceptionally well. A great communicator who
@@ -687,7 +689,7 @@
                       <i class="fa fa-star"></i>
                     </div>
                     <p> Mr. Kubebea</p>
-                    <span> CEO and founder of The Flip Experts, Kenya</span>
+                    <span> CEO and Founder of The Flip Experts, Kenya</span>
                   </div>
                 </div>
                 <p>Very efficient and timely delivery of our project. He is a great Freelancer and goes the extra mile
@@ -713,7 +715,7 @@
                       <i class="fa fa-star"></i>
                     </div>
                     <p> Mr. Kubebea</p>
-                    <span> CEO and founder of The Flip Experts, Kenya</span>
+                    <span> CEO and Founder of The Flip Experts, Kenya</span>
                   </div>
                 </div>
                 <p>Excellent delivery of the project that met and exceeded our expectations. Anand is great to work with
@@ -738,7 +740,7 @@
                       <i class="fa fa-star"></i>
                     </div>
                     <p> Mr. Kubebea</p>
-                    <span> CEO and founder of The Flip Experts, Kenya</span>
+                    <span> CEO and Founder of The Flip Experts, Kenya</span>
                   </div>
                 </div>
                 <p>Anand was always available at short notice to offer support whenever required. A very reliable
@@ -763,7 +765,7 @@
                       <i class="fa fa-star"></i>
                     </div>
                     <p> Mr. Kubebea</p>
-                    <span> CEO and founder of The Flip Experts, Kenya</span>
+                    <span> CEO and Founder of The Flip Experts, Kenya</span>
                   </div>
                 </div>
                 <p>Excellent Freelancer - Very professional and delivered exactly as we wanted. He is also very fast,
@@ -865,8 +867,47 @@
       </div>
     </div>
   </div>
-  <script src="/javascripts/script.js"></script>
+
+  <div class="modal fade mt-5" id="queryForm" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title col-sm-8">Contact Us</h5>
+          <button type=" button" class="close col-sm-4" data-toggle="modal" data-target="#queryForm">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form name="dwn-resume" action="https://formspree.io/f/xzbypyzk" method="POST">
+              <p class="d-flex justify-content-center">
+                <input type="text" placeholder="Enter Name" id="qname" name="name" required />
+              </p>
+              <p class="d-flex justify-content-center">
+                <input type="email" placeholder="Enter Email" id="qemail" name="email" required />
+              </p>
+              <p class="d-flex justify-content-center">
+                <select name="designation" id="designation">
+                  <option value="0">I am ..</option>
+                  <option value="I have a freelance project for you">I have a freelance project for you</option>
+                  <option value="HR">HR</option>
+                  <option value="Induvidual">Induvidual</option>
+                </select>
+              </p>
+              <p class="d-flex justify-content-center">
+                <input type="submit" value="Download Resume" id="submit" onclick="dwnResume();">
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src=" /javascripts/script.js"></script>
   <script src="./javascripts/animations.js"></script>
+  <!-- smtp js -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 
 </html>
