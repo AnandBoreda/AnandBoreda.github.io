@@ -13,9 +13,25 @@
             "sizes":"144x144"
         },
         {
+            "src":"/images/dp192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
             "src":"/images/dp3.jpg",
             "type":"image/jpg",
             "sizes":"400x400"
+        },
+        {
+            "src":"/images/dp512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        },
+        {
+            "src":"/images/dp192.png",
+            "type":"image/png",
+            "sizes":"192x192",
+            "purpose":"any maskable"
         }
         
     ]
