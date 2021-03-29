@@ -1,0 +1,23 @@
+{
+    "name":"Anand Boreda Portfolio",
+    "short_name":"AnandBoreda",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#2d2d5a",
+    "theme_color":"#8ed493",
+    "orientation":"portrait-primary",
+    "icons":[
+        {
+            "src":"/images/dp144.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"/images/dp3.jpg",
+            "type":"image/jpg",
+            "sizes":"400x400"
+        }
+        
+    ]
+
+}
